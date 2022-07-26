@@ -24,7 +24,9 @@ function App() {
     }
 
     /////dispatch custom action///////////
-    dispatch(sendCartData(cart));
+    if (cart.changed) {
+      dispatch(sendCartData(cart));
+    }
   }, [cart, dispatch]);
   return (
     <React.Fragment>
