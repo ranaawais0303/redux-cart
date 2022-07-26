@@ -40,6 +40,8 @@ function App() {
 
       // const responseData = await response.json();
     };
+
+    ////this will return if state is initial
     if (isInitial) {
       isInitial = false;
       return;
